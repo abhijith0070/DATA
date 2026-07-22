@@ -134,7 +134,7 @@ model Solution {
   slug        String   @unique
   industry    String
   description String   @db.Text
-  icon        String?
+  image       String?
   features    String[]
   isActive    Boolean  @default(true)
   order       Int      @default(0)
@@ -204,4 +204,15 @@ model FaqQuestion {
   updatedAt DateTime          @updatedAt
 
   @@map("faq_questions")
+}
+
+model PasswordResetToken {
+  id        String   @id @default(cuid())
+  email     String
+  otp       String   // 6-digit OTP code (or hashed OTP)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([email])
+  @@map("password_reset_tokens")
 }

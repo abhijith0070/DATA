@@ -228,7 +228,7 @@ export default function TechSolutions() {
 					<h2 className="text-xs sm:text-sm text-blue-600 dark:text-blue-400 tracking-widest mb-2 font-semibold uppercase">
 						OUR DATA SERVICES
 					</h2>
-					<h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+					<h1 className="text-2xl sm:text-3xl lg:text-4xl  text-gray-900 dark:text-white mb-4">
 						Data Domain Service Portfolio
 					</h1>
 					<p className="text-gray-600 dark:text-gray-300 text-sm sm:text-base max-w-2xl mx-auto">
@@ -271,18 +271,18 @@ export default function TechSolutions() {
 								<Card className="border-0 shadow-xl bg-white dark:bg-gray-900">
 									<CardContent className="p-6 sm:p-8">
 										<div className="flex items-center gap-3 mb-6">
-											<div className="w-8 h-8 bg-blue-600 text-white flex items-center justify-center text-sm font-bold">
+											{/* <div className="w-8 h-8 bg-blue-600 text-white flex items-center justify-center text-sm font-bold">
 												{selectedIndex + 1}
-											</div>
-												<h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
+											</div> */}
+												<h3 className="text-xl sm:text-2xl  text-gray-900 dark:text-white">
 												{selectedService.title}
 											</h3>
 										</div>
 										<ol className="space-y-4 sm:space-y-5">
 											{selectedService.features.map((feature, fidx) => (
 												<li key={fidx} className="flex items-start gap-3">
-															<div className="w-6 h-6 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 flex items-center justify-center text-xs font-semibold flex-shrink-0 mt-0.5">
-														{fidx + 1}
+															<div className="w-6 h-6  dark:bg-gray-800 text-gray-700 dark:text-gray-300 flex items-center justify-center text-xs font-semibold flex-shrink-0 mt-0.5">
+														{fidx + 1} .
 													</div>
 													<div className="flex-1">
 																<span className="text-gray-900 dark:text-gray-100 font-medium leading-relaxed text-sm sm:text-base block mb-1">
